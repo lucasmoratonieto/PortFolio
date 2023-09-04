@@ -91,7 +91,7 @@ li {
     auto-fit,
     minmax(300px, 1fr)
   ); /* Adjust the number of columns as needed */
-  grid-gap: 100px; /* Adjust the gap between grid items as needed */
+  grid-gap: 30px; /* Adjust the gap between grid items as needed */
   margin-top: 50px;
 }
 
@@ -100,8 +100,8 @@ li {
 }
 
 .projects-image {
-  width: 95%; /* Ensure the image takes up the full width of the grid cell */
-  height: 88%; /* Ensure the image takes up the full height of the grid cell */
+  width: 80%; /* Ensure the image takes up the full width of the grid cell */
+  height: 60%; /* Ensure the image takes up the full height of the grid cell */
   object-fit: cover; /* Maintain the image's aspect ratio and fill the grid cell */
   object-position: center; /* Center the image within the grid cell if necessary */
   border-radius: 20px;
@@ -120,6 +120,7 @@ li {
   font-size: 3rem;
   font-weight: 600;
   font-style: italic;
+  margin-bottom: 150px;
 }
 
 .code {
