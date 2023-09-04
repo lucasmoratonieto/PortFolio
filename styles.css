@@ -61,11 +61,17 @@ li {
   background: linear-gradient(62deg, #3a3d40, #181719);
 }
 
-.welcome-section > h1,
+.welcome-section > h1 {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(241, 196, 255);
+  font-size: 7rem;
+}
 .welcome-section > p {
   font-size: 3rem;
   font-weight: 600;
   color: aliceblue;
+  text-align: center;
 }
 
 /* Projects section */
@@ -73,8 +79,10 @@ li {
   text-align: center;
   padding: 10rem 2rem;
   background-color: #5a55a5;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .projects-grid {
@@ -109,7 +117,7 @@ li {
 
 .project-title {
   color: aliceblue;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: italic;
 }
