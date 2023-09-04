@@ -131,3 +131,20 @@ li {
 .project-title:hover .code {
   color: rgb(241, 196, 255);
 }
+
+/* Contact section */
+
+.contact-section {
+  background-color: rgb(241, 196, 255);
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.contact-section-header {
+  padding: 15%;
+  margin-bottom: 15px;
+}
