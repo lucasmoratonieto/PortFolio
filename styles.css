@@ -1,7 +1,6 @@
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
+/* Global styles */
+html {
+  font-size: 60%;
 }
 
 h1,
@@ -26,18 +25,11 @@ a:visited {
 }
 
 /* Navigation section */
-
 nav {
   position: fixed;
   width: 100%;
   margin: 0;
-  background-color: rgb(241, 196, 255);
-  background-image: linear-gradient(
-    62deg,
-    rgb(241, 196, 255) 0%,
-    rgb(228, 146, 253) 100%
-  );
-  border: 0;
+  background: linear-gradient(62deg, rgb(241, 196, 255), rgb(228, 146, 253));
   text-align: right;
   padding: 1px;
   font-size: 20px;
@@ -58,10 +50,7 @@ li {
   color: black;
 }
 
-/* End Navigation section */
-
 /* Welcome section */
-
 .welcome-section {
   display: flex;
   flex-direction: column;
@@ -69,65 +58,60 @@ li {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background: linear-gradient(62deg, #3a3d40, #181719);
 }
 
-.welcome-section > h1 {
-  font-size: 5rem;
-  font-weight: 20000;
-  font-style: italic;
+.welcome-section > h1,
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 600;
   color: aliceblue;
 }
 
-.welcome-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: rgb(241, 196, 255);
-}
-
-/* End Welcome section */
-
-/*  Projects section */
+/* Projects section */
 .projects-section {
-  width: 100%;
+  text-align: center;
+  padding: 10rem 2rem;
   background-color: #5a55a5;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .projects-grid {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Adjust the number of columns as needed */
+  grid-gap: 100px; /* Adjust the gap between grid items as needed */
   margin-top: 50px;
-  margin-left: 5%;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding-bottom: 5%;
+}
+
+.project-center {
+  overflow: hidden; /* Ensure the image doesn't overflow the grid cell */
+}
+
+.projects-image {
+  width: 95%; /* Ensure the image takes up the full width of the grid cell */
+  height: 88%; /* Ensure the image takes up the full height of the grid cell */
+  object-fit: cover; /* Maintain the image's aspect ratio and fill the grid cell */
+  object-position: center; /* Center the image within the grid cell if necessary */
+  border-radius: 20px;
+  min-width: 250px;
 }
 
 .projects-section-header {
-  padding-top: 10%;
-  color: #181719;
-  font-size: 5rem;
-  font-weight: 20000;
-  font-style: italic;
   color: aliceblue;
-  text-align: center;
-}
-
-/* .project-weather {
-  text-align: center;
-} */
-
-.projects-image {
-  width: 40vh;
-  height: calc(100% - 6.8rem);
-  min-width: 25%;
-}
-.project-title {
-  color: #181719;
   font-size: 3rem;
-  font-weight: 20000;
-  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-title {
   color: aliceblue;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
 }
 
 .code {
@@ -138,5 +122,3 @@ li {
 .project-title:hover .code {
   color: rgb(241, 196, 255);
 }
-
-/* End Projects section */
