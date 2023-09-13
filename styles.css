@@ -135,7 +135,7 @@ li {
 /* Contact section */
 
 .contact-section {
-  background-color: rgb(241, 196, 255);
+  background: linear-gradient(62deg, rgb(0, 0, 0), rgb(39, 39, 39));
   text-align: center;
   width: 100%;
   min-height: 100vh;
@@ -145,6 +145,14 @@ li {
 }
 
 .contact-section-header {
-  padding: 15%;
+  padding: 5%;
   margin-bottom: 15px;
+  color: white;
+}
+
+.links img {
+  display: inline;
+  width: 25%;
+  aspect-ratio: 6/1;
+  object-fit: contain;
 }
