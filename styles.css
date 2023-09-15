@@ -36,10 +36,15 @@ nav {
   padding: 1px;
   font-size: 20px;
   box-shadow: 0 2px 0 rgba(68, 66, 66, 0.4);
+
+  padding-left: 0;
+  white-space: nowrap; /* Prevents line breaks within list items */
+  overflow-x: auto; /* Adds horizontal scrollbar if necessary on smaller screens */
 }
 
 .nav-list a:hover {
   color: #000;
+  padding-left: 0;
 }
 
 ul {
