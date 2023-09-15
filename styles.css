@@ -159,9 +159,18 @@ li {
   margin-bottom: 100px;
 }
 
+.link-container {
+  text-align: center;
+}
+
+.links {
+  padding-left: 0;
+}
+
 .links img {
   display: inline;
-  width: 20%;
+  height: 20%;
+  /* min-width: 50%; */
   aspect-ratio: 6/1;
   object-fit: contain;
 }
