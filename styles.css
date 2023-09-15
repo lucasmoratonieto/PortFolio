@@ -165,6 +165,12 @@ li {
 
 .links {
   padding-left: 0;
+  white-space: nowrap; /* Prevents line breaks within list items */
+  overflow-x: auto; /* Adds horizontal scrollbar if necessary on smaller screens */
+  padding: 0; /* Remove default list padding */
+  margin: 0; /* Remove default list margin */
+  list-style: none; /* Remove default list bullets */
+  display: flex; /* Display list items as a horizontal flex container *
 }
 
 .links img {
